@@ -1,0 +1,41 @@
+<div *ngIf="deelnemer">
+
+  <h2>{{deelnemer.deelnemer | uppercase}} Details</h2>
+  <div><span>id: </span>{{deelnemer.id}}</div>
+  <div>
+    <label>deelnemer:
+      <input [(ngModel)]="deelnemer.deelnemer" placeholder="deelnemer"/>
+    </label>
+  </div>
+  <div>
+    <label>psychosomatisch:
+      <input [(ngModel)]="deelnemer.psychosomatisch" placeholder="psychosomatisch"/>
+    </label>
+  </div>
+  <div>
+    <label>gesprekken:
+      <input [(ngModel)]="deelnemer.gesprekken" placeholder="gesprekken"/>
+    </label>
+  </div>
+  <div>
+    <label>contracten:
+      <input [(ngModel)]="deelnemer.contracten" placeholder="contracten"/>
+    </label>
+  </div>
+  <div>
+    <label>leerdoelen:
+      <input [(ngModel)]="deelnemer.leerdoelen" placeholder="leerdoelen"/>
+    </label>
+  </div>
+  <div>
+    <label>werknemerprofiel:
+      <input [(ngModel)]="deelnemer.werknemerprofiel" placeholder="werknemerprofiel"/>
+    </label>
+  </div>
+  <div>
+    <label>werkplekprofiel:
+      <input [(ngModel)]="deelnemer.werkplekprofiel" placeholder="werkplekprofiel"/>
+    </label>
+  </div>
+  <button (click)="goBack()">terug</button>
+</div>

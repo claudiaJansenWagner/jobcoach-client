@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Alle Deelnemers</h2>
+      <ul class="deelnemers">
+        <li *ngFor="let deelnemer of deelnemers" (click)="onSelect(deelnemer)">
+          <span class="badge">{{deelnemer.id}}</span> {{deelnemer.deelnemer}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm">
+      <app-deelnemer-details [deelnemer]="selectedDeelnemer"></app-deelnemer-details>
+    </div>
+    <div class="col-sm">
+      Hier komen meer details
+    </div>
+  </div>
+</div>
+
+
+
