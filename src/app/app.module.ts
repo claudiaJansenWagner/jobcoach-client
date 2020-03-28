@@ -7,13 +7,15 @@ import {AppComponent}from './app.component';
 import {DeelnemersComponent}from './deelnemers/deelnemers.component';
 import { DeelnemerDetailsComponent } from './deelnemer-details/deelnemer-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GesprekkenComponent } from './gesprekken/gesprekken.component';
 
 @NgModule({
 declarations: [
 AppComponent,
 DeelnemersComponent,
 DeelnemerDetailsComponent,
-DashboardComponent
+DashboardComponent,
+GesprekkenComponent
 ],
 imports: [
 BrowserModule,
